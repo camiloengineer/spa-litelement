@@ -1,1 +1,1 @@
-# microfront-litelement
+# spa-litelement
