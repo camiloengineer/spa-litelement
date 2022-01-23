@@ -1,4 +1,4 @@
-import { LitElement } from 'lit-element';
+import { html, LitElement } from 'lit-element';
 
 export class Link extends LitElement {
 
@@ -19,7 +19,7 @@ export class Link extends LitElement {
     }
 
     render() {
-        html`
+        return html`
             <div @click="${ this._handlerClick }" >
                 <slot></slot>
             </div>

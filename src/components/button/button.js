@@ -10,8 +10,13 @@ class Button extends LitElement {
 
     constructor(){
         super();
-        // this.text = 'Botón'
     }
+    
+    connectedCallback() {
+        super.connectedCallback()
+        console.log(this.text)
+        console.log('connected')
+      }
 
     static get styles() {
         return css`

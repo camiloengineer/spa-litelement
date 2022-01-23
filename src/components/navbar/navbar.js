@@ -20,9 +20,10 @@ export class Navbar extends LitElement {
                 <wc-link to="/home">
                     <wc-button text="Home" ></wc-button>
                 </wc-link>
-                <wc-link to="/pagina2">
+                <wc-link to="/pagina2"> 
                     <wc-button text="Página 2" ></wc-button>
-                </wc-link to="/pagina3">
+                </wc-link>
+                <wc-link to="/pagina3">
                     <wc-button text="Página 3" ></wc-button>
                 </wc-link>
             </div>

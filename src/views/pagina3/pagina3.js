@@ -1,4 +1,4 @@
-import { LitElement } from 'lit-element';
+import { html, LitElement } from 'lit-element';
 
 export class Pagina3 extends LitElement {
     render() {
