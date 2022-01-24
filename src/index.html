@@ -10,6 +10,18 @@
 <body>
     <h1>Componente de Navegación</h1>
     <wc-navbar></wc-navbar>
+
+    <wc-viewport>
+        <wc-route path='/home'>
+            <wc-home></wc-home>
+        </wc-route>
+        <wc-route path='/pagina2'>
+            <wc-pagina2></wc-pagina2>
+        </wc-route>
+        <wc-route>
+            <wc-pagina3 path='/pagina3'></wc-pagina3>
+        </wc-route>
+    </wc-viewport>
 </body>
 
 </html>
