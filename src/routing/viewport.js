@@ -4,11 +4,12 @@ export class Viewport extends LitElement {
 
     constructor(){
         super();
-        this.viewNow = '/default';
+        this.viewNow = '/home';
     }
 
     connectedCallback() {
-        this.viewNow = this.querySelectorAll('wc-route');
+        super.connectedCallback();
+        this.viewList = this.querySelectorAll('wc-route');
         this.renderView(this.viewNow);
     }
 
@@ -16,7 +17,7 @@ export class Viewport extends LitElement {
         this.innerHTML = '';
         this.shadowRoot.innerHTML = '';
 
-        const view = Array.from(this.viewList).find(() => {
+        const view = Array.from(this.viewList).find((node) => {
             return node.getAttribute('path') === path;
         });
 

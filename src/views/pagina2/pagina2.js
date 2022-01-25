@@ -2,7 +2,7 @@ import { html, LitElement } from 'lit-element';
 
 export class Pagina2 extends LitElement {
     render() {
-        html`
+        return html`
             <div>
                 <h2>Hola desde Página 2</h2>
             </div>

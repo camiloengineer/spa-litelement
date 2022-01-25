@@ -10,12 +10,12 @@ export class Link extends LitElement {
     }
 
     _handlerClick(){
-        const detailt = {
+        const detail = {
             to: this.to,
             routerName: this.routerName
         }
 
-        this.dispatchEvent(new CustomEvent('goNav', detailt));
+        this.dispatchEvent(new CustomEvent('goEvent', { detail, bubbles: true, composed: true }));
     }
 
     render() {
